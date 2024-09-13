@@ -1,0 +1,193 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: "Popppins", sans-serif;
+}
+section{
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100vh;
+	overflow-x:hidden;
+}
+		section .bg{
+			position:absolute;
+	width:100%;
+	height:100%;
+	top: 0;
+	left:0;
+	object-fit:cover;
+		}
+		
+		section .trees{
+			position:absolute;
+	width:100%;
+	height:100%;
+	top: 0;
+	left:0;
+	object-fit:cover;
+	z-index:0;
+	pointer-events: none;
+		}
+		section .girl{
+			position:absolute;
+			scale:0.65;
+			animation: animateGirl 10s linear infinite;
+		}
+		@keyframes animateGirl {
+			0%{
+				transform: translateX(calc(100% + 100vw));
+			}
+			50%{
+				transform: translateX(calc(-100% - 100vw));
+			}
+			50.01%{
+				transform: translateX(calc(-100% - 100vw))
+				rotateY(180deg);
+			}
+			100%{
+				transform: translateX(calc(100% + 100vw))
+				rotateY(180deg);
+		}
+
+		
+	}
+		section .set{
+			position:absolute;
+			width:100%;
+			height:100%;
+			top: 0;
+			left:0;
+			pointer-events:none;
+		
+		}
+		section .set div{
+			position: absolute;
+			display:block;
+		}
+		
+		section .set div:nth-child(1)
+		{
+			left:20%;
+			animation: animate 15s linear infinite;
+			animation-delay:-7s;
+		}
+		section .set div:nth-child(2)
+		{
+			left:40%;
+			animation: animate 15s linear infinite;
+			animation-delay:-8s;
+		}
+		section .set div:nth-child(3)
+		{
+			left:35%;
+			animation: animate 10s linear infinite;
+			animation-delay:-4s;
+		}
+		section .set div:nth-child(4)
+		{
+			left:50%;
+			animation: animate 11s linear infinite;
+			animation-delay:-5s;
+		}
+		section .set div:nth-child(5)
+		{
+			left:80%;
+			animation: animate 13s linear infinite;
+			animation-delay:-8s;
+		}
+		section .set div:nth-child(6)
+		{
+			left:90%;
+			bottom: 20%;
+			animation: animate 14s linear infinite;
+			animation-delay:-3s;
+		}
+		section .set div:nth-child(7)
+		{
+			top:10%;
+			left:10%;
+			animation: animate 9s linear infinite;
+			animation-delay:-9s;
+		}
+		section .set div:nth-child(8)
+		{
+			left:60%;
+			animation: animate 15s linear infinite;
+			animation-delay:-10s;
+		}
+		@keyframes animate
+		{
+			0%
+			{
+				opacity:0;
+				top:10%;
+				transform: translateX(20px) rotate(0deg);
+			}
+			10%{
+				opacity:1;
+			}
+			20%
+			{
+				transform:translateX(-20px) rotates(45deg);
+			}
+			40%
+			{
+				transform: translateX(-20px) rotate(90deg);
+			}
+			60%{
+				transform: translateX(20px) rotate(180deg);
+			}
+			80%{
+				transform:translateX(-20px) rotate(180deg);
+			}
+			100%{
+				top: 110%;
+				transform: translateX(225px) rotate(180deg);
+			}
+		}
+		.wrapper{
+			width:420px;
+			background: transparent;
+			border: 2px solid rgba(255, 255, 255, .2);
+			backdrop-filter: blur(30px);
+			background-size: 100px;
+			color:maroon;
+			border-radius: 10px;
+			padding:30px;}
+		h1{
+			color:maroon;
+		}
+		
+		input{
+			width: 70%;
+			height: 50px;
+			border:none;
+			border-radius: 5px;
+			color:maroon;
+			background-color: white;
+			padding:10px;
+		
+		
+		}
+		button{
+			width: 70%;
+			height: 50px;
+			border:none;
+			border-radius: 10px;
+			color:white;
+			background-color:maroon;
+		}
+		a{
+			color:maroon;
+			margin-left:60%;
+			margin-bottom: 20%;
+		}
+		p{
+			color:maroon;
+			margin-right: 40%;
+		
+		}
